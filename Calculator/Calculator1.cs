@@ -10,6 +10,8 @@ namespace Calculator
     {
         public static int Sum(int a, int b)
         {
+            if (a == 0 || b == 0)
+                throw new System.Exception("Zero input provided");
             return a + b;
         }
 
